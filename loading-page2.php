@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>SCDB - Login | &copy; Offical Website SCDB IPDN</title>
+  <title>&copy; Offical Website SCDB IPDN</title>
   <link rel="icon" type="image/png" sizes="16x16" href="https://upload.wikimedia.org/wikipedia/commons/5/56/Lambang_IPDN.png">
 </head>
 <body>
 <script>
    setTimeout(function(){
       window.location.href = 'http://127.0.0.1/login-animation/15/Dashboard/';
-   }, 9000);
+   }, 8000);
 </script>
 <style type="text/css">
 /* Animation properties */
@@ -95,21 +95,59 @@
 }
 
 /* General styles and layout */
-body {
-  background: #000 url(//cssanimation.rocks/demo/starwars/images/bg.jpg);
-  /*background: #f6f5f7;*/
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  font-family: 'Montserrat', sans-serif;
-  height: 100vh;
-  margin: -20px 0 50px;
+html {
+  height:100%;
+}
 
-  /*height: 100%;*/
-  /*background-repeat: no-repeat;*/
-  /*background:#52b7e5;*/
-  /*position: relative;*/
+body {
+  margin:0;
+}
+
+.bg {
+  animation:slide 3s ease-in-out infinite alternate;
+  background-image: linear-gradient(-60deg, #6c3 50%, #09f 50%);
+  bottom:0;
+  left:-50%;
+  opacity:.5;
+  position:fixed;
+  right:-50%;
+  top:0;
+  z-index:-1;
+}
+
+.bg2 {
+  animation-direction:alternate-reverse;
+  animation-duration:4s;
+}
+
+.bg3 {
+  animation-duration:5s;
+}
+
+.content {
+  background-color:rgba(255,255,255,.8);
+  border-radius:.25em;
+  box-shadow:0 0 .25em rgba(0,0,0,.25);
+  box-sizing:border-box;
+  left:50%;
+  padding:10vmin;
+  position:fixed;
+  text-align:center;
+  top:50%;
+  transform:translate(-50%, -50%);
+}
+
+h1 {
+  font-family:monospace;
+}
+
+@keyframes slide {
+  0% {
+    transform:translateX(-25%);
+  }
+  100% {
+    transform:translateX(25%);
+  }
 }
 
 .starwars-demo {
@@ -147,12 +185,12 @@ img {
 .byline {
   color: #fff;
   font-family: Rubik,sans-serif;
-  font-size: 2.25em;
+  font-size: 2.00em;
   left: -2em;
   /*letter-spacing: 0.4em;*/
   right: -2em;
   text-align: center;
-  /*text-transform: uppercase;*/
+  text-transform: uppercase;
   /*top: 29%;*/
   top: 100%;
 }
@@ -171,12 +209,15 @@ img {
   }
 }
 </style>
+<div class="bg"></div>
+<div class="bg bg2"></div>
+<div class="bg bg3"></div>
 <div class="starwars-demo">
   <!-- <img src="//cssanimation.rocks/demo/starwars/images/star.svg" alt="Star" class="star"> -->
 	<img src="https://upload.wikimedia.org/wikipedia/commons/5/56/Lambang_IPDN.png" alt="Star" class="star">
   <!-- <img src="//cssanimation.rocks/demo/starwars/images/wars.svg" alt="Wars" class="wars"> -->
 	<!-- <img src="//cssanimation.rocks/demo/starwars/images/wars.svg" alt="Wars" class="wars"> -->
-	<h2 class="byline" id="byline">Institut Pemerintahan Dalam Negeri</h2>
+	<h2 class="byline" id="byline">Institut Pemerintahan Dalam Negeri KEMENDAGRI RI</h2>
 </div>
 <script type="text/javascript">
 	var byline = document.getElementById('byline');  	// Find the H2
