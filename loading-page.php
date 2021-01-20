@@ -1,3 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>SCDB - Login | &copy; Offical Website SCDB IPDN</title>
+  <link rel="icon" type="image/png" sizes="16x16" href="https://upload.wikimedia.org/wikipedia/commons/5/56/Lambang_IPDN.png">
+</head>
+<body>
+<script>
+   setTimeout(function(){
+      window.location.href = 'http://127.0.0.1/login-animation/15/Dashboard/';
+   }, 9000);
+</script>
 <style type="text/css">
 /* Animation properties */
 .star {
@@ -85,6 +97,19 @@
 /* General styles and layout */
 body {
   background: #000 url(//cssanimation.rocks/demo/starwars/images/bg.jpg);
+  /*background: #f6f5f7;*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: 'Montserrat', sans-serif;
+  height: 100vh;
+  margin: -20px 0 50px;
+
+  /*height: 100%;*/
+  /*background-repeat: no-repeat;*/
+  /*background:#52b7e5;*/
+  /*position: relative;*/
 }
 
 .starwars-demo {
@@ -102,6 +127,9 @@ body {
 
 img {
   width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .star, .wars, .byline {
@@ -109,7 +137,7 @@ img {
 }
 
 .star {
-  top: -0.75em;
+  top: -12.75em;
 }
 
 .wars {
@@ -118,14 +146,15 @@ img {
 
 .byline {
   color: #fff;
-  font-family: "ITC Serif Gothic", Lato;
+  font-family: Rubik,sans-serif;
   font-size: 2.25em;
   left: -2em;
-  letter-spacing: 0.4em;
+  /*letter-spacing: 0.4em;*/
   right: -2em;
   text-align: center;
-  text-transform: uppercase;
-  top: 29%;
+  /*text-transform: uppercase;*/
+  /*top: 29%;*/
+  top: 100%;
 }
 
 /*** Media queries for adjusting to different screen sizes ***/
@@ -143,22 +172,13 @@ img {
 }
 </style>
 <div class="starwars-demo">
-	<img src="//cssanimation.rocks/demo/starwars/images/star.svg" alt="Star" class="star">
-	<img src="//cssanimation.rocks/demo/starwars/images/wars.svg" alt="Wars" class="wars">
-	<h2 class="byline" id="byline">The Force Awakens</h2>
+  <!-- <img src="//cssanimation.rocks/demo/starwars/images/star.svg" alt="Star" class="star"> -->
+	<img src="https://upload.wikimedia.org/wikipedia/commons/5/56/Lambang_IPDN.png" alt="Star" class="star">
+  <!-- <img src="//cssanimation.rocks/demo/starwars/images/wars.svg" alt="Wars" class="wars"> -->
+	<!-- <img src="//cssanimation.rocks/demo/starwars/images/wars.svg" alt="Wars" class="wars"> -->
+	<h2 class="byline" id="byline">Institut Pemerintahan Dalam Negeri</h2>
 </div>
-
 <script type="text/javascript">
-	/* Learn how to create this and much more with this email course:
-
-	https://cssanimation.rocks/courses/animation-101/
-
-	MANY THANKS TO @tadywankenobi for the following JS to handle the text in the byline:
-
-	The following JS takes in the byline and splits it into letters, each one wrapped in a span. We need to create the spans as nodes, we can't just add them to the HTML using innerHTML, as to do so would mean the CSS won't affect the span because it doesn't recognise the tag as existing. It's an old problem we run into time and again.
-
-	*/
-
 	var byline = document.getElementById('byline');  	// Find the H2
 	bylineText = byline.innerHTML;										// Get the content of the H2
 	bylineArr = bylineText.split('');									// Split content into array
@@ -178,3 +198,5 @@ img {
 	  }
 	}
 </script>
+</body>
+</html>
