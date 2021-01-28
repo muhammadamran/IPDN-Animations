@@ -5,11 +5,11 @@
   <link rel="icon" type="image/png" sizes="16x16" href="https://upload.wikimedia.org/wikipedia/commons/5/56/Lambang_IPDN.png">
 </head>
 <body>
-<script>
+<!-- <script>
    setTimeout(function(){
       window.location.href = 'http://127.0.0.1/login-animation/15/Dashboard/';
    }, 9000);
-</script>
+</script> -->
 <style type="text/css">
 /* Animation properties */
 .star {
@@ -172,9 +172,9 @@ img {
 }
 </style>
 <div class="starwars-demo">
-  <!-- <img src="//cssanimation.rocks/demo/starwars/images/star.svg" alt="Star" class="star"> -->
-	<img src="https://upload.wikimedia.org/wikipedia/commons/5/56/Lambang_IPDN.png" alt="Star" class="star">
-  <!-- <img src="//cssanimation.rocks/demo/starwars/images/wars.svg" alt="Wars" class="wars"> -->
+  <img src="//cssanimation.rocks/demo/starwars/images/star.svg" alt="Star" class="star">
+	<!-- <img src="https://upload.wikimedia.org/wikipedia/commons/5/56/Lambang_IPDN.png" alt="Star" class="star"> -->
+  <img src="//cssanimation.rocks/demo/starwars/images/wars.svg" alt="Wars" class="wars">
 	<!-- <img src="//cssanimation.rocks/demo/starwars/images/wars.svg" alt="Wars" class="wars"> -->
 	<h2 class="byline" id="byline">Institut Pemerintahan Dalam Negeri</h2>
 </div>
